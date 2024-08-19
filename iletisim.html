@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            height: 100vh;
+        }
+
+        nav {
+            background-color: #45a5ac;
+            padding: 20px;
+            margin: 0px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 800px;
+            text-align: center; 
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        div {
+            width: 100%;
+            padding: 20px;
+            margin: 20px;
+            max-width: 800px;
+            margin-top: 20px;
+            text-align: center;     
+        }
+
+        div nav {
+            padding: 20px;
+            margin: 0px;
+        }
+
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #45a5ac;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <nav>
+            <a href="index.html">Ana Sayfa</a>
+            <a href="hakkinda.html">Hakkında</a>
+            <a href="servisler.html">Servisler</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </div>
+    <div class="container">
+        <h2>İletişim Bilgileri</h2>
+        <p>Aşağıdaki iletişim bilgilerini kullanarak bizimle iletişime geçebilirsiniz:</p>
+        <ul>
+            <li>Adres: Örnek Sokak No:1, İstanbul, Türkiye</li>
+            <li>Telefon: +90 123 456 78 90</li>
+            <li>E-posta: info@webtasarimfirma.com</li>
+        </ul>
+
+        <h2>Bizimle İletişime Geçin</h2>
+        <form action="#" method="post">
+            <label for="name">Adınız:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mesajınız:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Gönder</button>
+        </form>
+    </div>
+</body>
+</html>
